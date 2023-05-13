@@ -1,11 +1,13 @@
+package tpo6.vistas;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TPO6.VISTAS;
 
-import TPO6.negocio.Directorio;
+
+import tpo6.negocio.Directorio;
 
 /**
  *
@@ -65,6 +67,11 @@ public static Directorio miDirectorio=new Directorio();
         jMenu1.add(jMenuItem2);
 
         jMenuItem3.setText("Borrar Cliente");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem3);
 
         jMenuBar1.add(jMenu1);
@@ -101,6 +108,16 @@ public static Directorio miDirectorio=new Directorio();
         escritorio.add(vac);
         escritorio.moveToFront(vac);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        escritorio.removeAll();
+        escritorio.repaint();
+        ViewBorrarCliente vbc = new ViewBorrarCliente();
+        vbc.setVisible(true);
+        escritorio.add(vbc);
+        escritorio.moveToFront(vbc);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments

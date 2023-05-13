@@ -1,12 +1,14 @@
+package tpo6.vistas;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TPO6.VISTAS;
+
 
 import javax.swing.JOptionPane;
-import TPO6.negocio.Cliente;
+import tpo6.negocio.Cliente;
 
 /**
  *

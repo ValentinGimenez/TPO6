@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TPO;
+package tpo6;
 
 import javax.swing.JOptionPane;
-import TPO6.negocio.Cliente;
-import TPO6.negocio.Directorio;
+import tpo6.negocio.Cliente;
+import tpo6.negocio.Directorio;
 
 /**
  *
- * @author Usuario
+ * @author Valentin
  */
-public class TPO {
+public class TPO6 {
 
     /**
      * @param args the command line arguments
@@ -40,8 +40,6 @@ public class TPO {
            JOptionPane.showMessageDialog(null,"Dato No registrado");
            
        }
-        
-        
     }
     
 }
