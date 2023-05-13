@@ -63,9 +63,10 @@ public class Directorio {
     public void borrarCliente(String telefono) {
         Cliente aux = registro.remove(telefono);
         if (aux != null) {
-            JOptionPane.showMessageDialog(null, "Dato no Encontrado");
-        } else {
             JOptionPane.showMessageDialog(null, "Cliente eliminado");
+        } else {
+            JOptionPane.showMessageDialog(null, "Dato no Encontrado");
+
         }
     }
 }
