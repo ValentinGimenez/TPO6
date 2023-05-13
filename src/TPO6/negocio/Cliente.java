@@ -1,5 +1,5 @@
 
-package tel;
+package TPO6.negocio;
 
 
 public class Cliente {

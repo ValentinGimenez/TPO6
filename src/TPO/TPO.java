@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp6;
+package TPO;
 
 import javax.swing.JOptionPane;
-import tel.Cliente;
-import tel.Directorio;
+import TPO6.negocio.Cliente;
+import TPO6.negocio.Directorio;
 
 /**
  *
  * @author Usuario
  */
-public class Tp6 {
+public class TPO {
 
     /**
      * @param args the command line arguments
