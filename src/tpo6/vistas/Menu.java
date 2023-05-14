@@ -64,6 +64,11 @@ public static Directorio miDirectorio=new Directorio();
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Buscar Cliente");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuItem3.setText("Borrar Cliente");
@@ -122,6 +127,16 @@ public static Directorio miDirectorio=new Directorio();
         escritorio.add(vbc);
         escritorio.moveToFront(vbc);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        escritorio.removeAll();
+        escritorio.repaint();
+        ViewBuscarClientes vbuc = new ViewBuscarClientes ();
+        vbuc.setVisible(true);
+        escritorio.add(vbuc);
+        escritorio.moveToFront(vbuc);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -40,6 +40,8 @@ public class TPO6 {
            JOptionPane.showMessageDialog(null,"Dato No registrado");
            
        }
+       //JOptionPane.showMessageDialog(null,d.buscarCliente("42"));
+       
     }
     
 }
